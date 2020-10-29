@@ -120,7 +120,7 @@ def get_misspelled_set(dictionary, text):
   of N words to a set, and O(K) is the time it takes to search for K words in
   a set.
   """
-  dictionaryset= dictionary()
+  dictionaryset= set(dictionary)
   allmisspelled= []
   for word in text:
     if word.lower() not in dictionaryset:
